@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace wasabi\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

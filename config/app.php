@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        wasabi\Providers\AppServiceProvider::class,
+        wasabi\Providers\AuthServiceProvider::class,
+        // wasabi\Providers\BroadcastServiceProvider::class,
+        wasabi\Providers\EventServiceProvider::class,
+        wasabi\Providers\RouteServiceProvider::class,
 
     ],
 

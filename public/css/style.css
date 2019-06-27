@@ -10,6 +10,11 @@ html, body {
     font-size: 1rem;
 }
 
+main {
+  min-height: 95vh;
+  margin-top: 5vh;
+}
+
 .full-height {
     height: 100vh;
 }
@@ -59,7 +64,26 @@ html, body {
     margin-bottom: 30px;
 }
 
-/* Sign up & Sign In Button */
+.back-green {
+  background-color: #cef1da;
+}
+
+/* header */
+#header-area {
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 5vh;
+}
+
+#header-logo {
+  font-size: 1.5rem;
+  color: #78c993;
+}
+
+/* Sign up & Sign In ボタン */
 .btn-square-raised {
   display: inline-block;
   padding: 0.5em 1em;
