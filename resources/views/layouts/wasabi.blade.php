@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  @section('header')
+  <h1>@yield('title')</h1>
 </body>
 </html>

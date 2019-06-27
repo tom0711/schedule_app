@@ -17,15 +17,15 @@
     </div>
   @endif
 
-  <div class="content">
+  <div class="index-content">
     <div class="title m-b-md">
-      wasabi
-
+      Walcome to the wasabi.
     </div>
+    <p>Schedule changes your work and private.</p>
 
     <div class="links">
-      <a href="#">Sign Up</a>
-      <a href="#">Sign In</a>
+      <a href="#" class="btn-square-raised sign-botton">Sign Up</a>
+      <a href="#" class="btn-square-raised sign-botton">Sign In</a>
     </div>
   </div>
 </div>
