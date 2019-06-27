@@ -24,8 +24,8 @@
     <p>Schedule changes your work and private.</p>
 
     <div class="links">
-      <a href="#" class="btn-square-raised sign-botton">Sign Up</a>
-      <a href="#" class="btn-square-raised sign-botton">Sign In</a>
+      <a href="/register" class="btn-square-raised sign-botton">Sign Up</a>
+      <a href="/login" class="btn-square-raised sign-botton">Sign In</a>
     </div>
   </div>
 </div>
