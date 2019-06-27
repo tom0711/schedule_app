@@ -22,6 +22,8 @@
 </head>
 <body>
   <div id="app">
+    <div class="back-green"></div>
+    <!-- header area -->
     <nav id="header-area" class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
       <div class="container">
           <a id="header-logo" class="navbar-brand" href="{{ url('/') }}">
@@ -73,8 +75,10 @@
       </div>
     </nav>
 
-    <main class="py-4 back-green">
-      @yield('content')
+    <main class="py-4">
+      <div class="content">
+        @yield('content')
+      </div>
     </main>
   </div>
 </body>
