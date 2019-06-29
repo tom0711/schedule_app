@@ -21,6 +21,6 @@
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  @yield('content')
 </body>
 </html>

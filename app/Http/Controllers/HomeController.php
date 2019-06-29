@@ -3,6 +3,8 @@
 namespace wasabi\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Request\HomeRequest;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
