@@ -14,6 +14,10 @@ main {
   min-height: 100vh;
 }
 
+input[type="text"], textarea {
+  border: 1px solid #636b6f;
+}
+
 .full-height {
     height: 100vh;
 }
@@ -89,7 +93,7 @@ main {
   color: #78c993;
 }
 
-/* Sign up & Sign In button */
+/* button */
 .btn-square-raised {
   display: inline-block;
   padding: 0.5em 1em;
@@ -126,6 +130,12 @@ main {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 }
 
+.card-body {
+  overflow: hidden;
+  padding-left: 0;
+  padding-top: 0;
+}
+
 /* side menu */
 .card-aside-left {
   border: 1px solid rgba(0, 0, 0, 0.29);
@@ -134,6 +144,8 @@ main {
   min-width: 13rem;
   padding: 2rem 1rem;
   float: left;
+  padding-bottom: 10000px;
+  margin-bottom: -10000px;
 }
 
 .card-aside-left ul {
@@ -171,5 +183,29 @@ main {
 /* main menu */
 .card-main {
   float: left;
+  width: 70%;
   padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+/* inquiry */
+.inquiry-table th, .inquiry-table td {
+  padding: 5px 10px;
+}
+
+.inquiry-table input {
+  width: 20rem;
+}
+
+.inquiry-submit {
+  text-align: center;
+}
+
+.inquiry-table textarea {
+  resize: auto;
+  max-width: 45rem;
+  min-width: 20rem;
+  max-height: 25rem;
+  min-height: 200px;
 }

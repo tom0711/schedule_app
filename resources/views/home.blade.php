@@ -9,23 +9,22 @@
                 <div class="card-body">
                   <div class="card-aside-left">
                     <ul>
-                      <li><a href="#">Schedule</a></li>
-                      <li><a href="#">Todo List</a></li>
-                      <li><a href="#">Signal Words</a></li>
-                      <li><a href="#">Board</a></li>
-                      <li><a href="#">Inquiry</a></li>
-                      <li><a href="#">Setting</a></li>
+                      <li><a href="#">スケジュール</a></li>
+                      <li><a href="#">Todoリスト</a></li>
+                      <li><a href="#">独り言</a></li>
+                      <li><a href="#">掲示板</a></li>
+                      <li><a href="/inquiry/index">問い合わせ</a></li>
+                      <li><a href="#">設定</a></li>
                     </ul>
                   </div>
                   <div class="card-main">
-                    ログインに成功しました。
+                    @yield('card-main')
                   </div>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
-
                 </div>
             </div>
         </div>

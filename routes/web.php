@@ -11,6 +11,10 @@
 |
 */
 
+// 言語切り替え
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
+
+
 Route::get('/', function () {
     return view('wasabi');
 });
@@ -19,5 +23,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// 言語切り替え
-Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
+Route::get('inquiry/index', 'InquiryController@index');
+Route::post('inquiry/index', 'InquiryController@confirm');
