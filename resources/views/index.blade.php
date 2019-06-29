@@ -19,13 +19,15 @@
 
   <div class="index-content">
     <div class="title m-b-md">
-      Walcome to the wasabi.
+      Welcome to the wasabi.
     </div>
-    <p>Schedule changes your work and private.</p>
+    <!-- <p>Planing schedule is finding yourself.</p> -->
+    <p>Your calendar can change your life.</p>
+    <p>スケジュール管理をして普段の生活を充実させたい方へ</p>
 
     <div class="links">
-      <a href="{{ route('register') }}" class="btn-square-raised sign-botton">Sign Up</a>
-      <a href="{{ route('login') }}" class="btn-square-raised sign-botton">Sign In</a>
+      <a href="{{ route('register') }}" class="btn-square-raised sign-botton">新規登録</a>
+      <a href="{{ route('login') }}" class="btn-square-raised sign-botton">ログイン</a>
     </div>
   </div>
 </div>

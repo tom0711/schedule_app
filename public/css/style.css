@@ -7,10 +7,11 @@ html, body {
     height: 100vh;
     margin: 0;
     font-size: 1rem;
+    overflow: hidden;
 }
 
 main {
-  min-height: 200vh;
+  min-height: 100vh;
 }
 
 .full-height {
@@ -112,6 +113,11 @@ main {
 
 .sign-botton {
   margin: 3vh 3vh;
+}
+
+/* 新規登録フォーム */
+.card-body p{
+  text-align: center;
 }
 
 /* content */
