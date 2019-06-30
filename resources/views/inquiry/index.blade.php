@@ -1,34 +1,21 @@
 @extends('home')
 
 @section('card-main')
-<h3>お問い合わせ</h3>
-<p>タイトル、お問い合わせ内容を入力いただき、確認ボタンを押してください。</p>
-  <form class="" action="/inquiry/confirm" method="post">
-    <table class="inquiry-table">
-      {{ csrf_field() }}
+  <div class="center-button">
+    <a class="btn-square-raised" href="/inquiry/add">新規問い合わせ作成</a>
+  </div>
+
+  <h3>お問い合わせ一覧</h3>
+  <table>
+    @foreach($items as $item)
       <tr>
-        <th>タイトル</th>
+        <th>title:</th>
+        <td>{{$item->title}}</td>
       </tr>
       <tr>
-        <td>
-          <input type="text" name="title" value="{{ isset($items['title']) ? $items['title'] : old('title') }}">
-        </td>
+        <th>content;</th>
+        <td>{{$item->inquiry}}</td>
       </tr>
-      <tr>
-        <th>お問い合わせ内容</th>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <td>
-          <textarea name="inquiry" rows="8" cols="80">{{ isset($items['inquiry']) ? $items['inquiry'] : old('inquiry') }}</textarea>
-        </td>
-      </tr>
-      <tr>
-        <td class="inquiry-submit">
-          <input class="btn-square-raised" type="submit" name="confirm" value="確認">
-        </td>
-      </tr>
-    </table>
-  </form>
+    @endforeach
+  </table>
 @endsection

@@ -21,6 +21,9 @@
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  @yield('content')
+  <main>
+    <div id="background-img"></div>
+    @yield('content')
+  </main>
 </body>
 </html>

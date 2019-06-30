@@ -15,17 +15,17 @@
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
 
 
-Route::get('/', function () {
-    return view('wasabi');
-});
+Route::get('/', 'WasabiController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('');
 
 // お問い合わせページ
 Route::get('/inquiry/index', 'InquiryController@index');
-Route::post('/inquiry/index', 'InquiryController@index');
+
+Route::get('/inquiry/add', 'InquiryController@add');
+Route::post('/inquiry/add', 'InquiryController@add');
 
 Route::post('/inquiry/confirm', 'InquiryController@confirm');
 

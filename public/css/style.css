@@ -9,8 +9,23 @@ html, body {
     font-size: 1rem;
 }
 
+.back-white {
+  background-color: rgba(255, 255, 255, 0.3);
+  min-height: 100vh;
+}
+
 main {
-  min-height: 50vh;
+}
+
+#background-img {
+  min-height: 100vh;
+  background-image: url('../image/fence-19544_1920.jpg');
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 form {
@@ -19,21 +34,6 @@ form {
 
 input[type="text"], textarea {
   border: 1px solid #636b6f;
-}
-
-#viewer {
-    margin: 0 auto;
-    width: 1850px;
-    height: 500px;
-    text-align: left;
-    overflow: hidden;
-    position: relative;
-}
-
-#viewer img {
-    top: 0;
-    left: 0;
-    position: absolute;
 }
 
 .full-height {
@@ -67,13 +67,17 @@ input[type="text"], textarea {
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.29);
 }
 
+.sub-title {
+  color:#FFFFFF;
+}
+
 .index-content p {
   font-size: 1.5rem;
 }
 
 .links > a {
     color: #FFFFFF;
-    padding: 0 25px;
+    padding: 0.5em 1em;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -138,17 +142,18 @@ input[type="text"], textarea {
   margin: 3vh 3vh;
 }
 
-.back-home {
+.center-button {
   width: 100%;
   text-align: center;
   margin-top: 3rem;
 }
 
-.back-home a {
+.center-button a {
   width: 15rem;
 }
 
 /* content */
+
 .m-top-5 {
   margin-top: 5vh;
 }
@@ -161,6 +166,8 @@ input[type="text"], textarea {
 
 .card {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .card-body {
@@ -282,7 +289,12 @@ input[type="text"], textarea {
   width: 90%;
 }
 
-.footer {
-  height: 5rem;
-  background-color: #FFFFFF;
+#footer {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-height: 5vh;
+  opacity: 0.8;
 }

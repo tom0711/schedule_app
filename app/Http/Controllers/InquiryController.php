@@ -4,21 +4,29 @@ namespace wasabi\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use wasabi\Inquiry;
 
 class InquiryController extends Controller
 {
-  // お問い合わせ入力ページ
+  // お問い合わせ一覧ページ
   public function index(Request $request){
+    $items = Inquiry::all();
 
+    return view('inquiry.index', ['items' => $items]);
+  }
+
+  // お問い合わせ入力ページ
+  public function add(Request $request)
+  {
     if(!$request->title && !$request->inquiry){
-      return view('inquiry.index');
+      return view('inquiry.add');
     }else{
       $items = [
         'title' => $request->title,
         'inquiry' => $request->inquiry,
       ];
 
-      return view('inquiry.index', ['items' => $items]);
+      return view('inquiry.add', ['items' => $items]);
     }
   }
 
@@ -39,6 +47,9 @@ class InquiryController extends Controller
       'title' => $request->title,
       'inquiry' => $request->inquiry,
     ];
-    return view('inquiry.done', ['items' => $items]);
+    protected $fillable = $items;
+    Inquiry::create($fillable);
+
+    return view('inquiry.done');
   }
 }

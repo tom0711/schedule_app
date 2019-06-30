@@ -24,7 +24,7 @@
 </head>
 <body>
   <div id="app">
-    <div class="back-green"></div>
+    <div id="background-img"></div>
     <!-- header area -->
     <nav id="header-area" class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
       <div class="container">
@@ -77,11 +77,12 @@
       </div>
     </nav>
     <main>
+      <div id="background-img"></div>
+      <div class="back-white">
         @yield('content')
+      </div>
     </main>
-    <div class="footer">
-
-    </div>
+    <div id="footer" class="bg-white">Footer</div>
   </div>
 </body>
 </html>

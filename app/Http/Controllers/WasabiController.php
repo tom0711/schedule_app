@@ -11,6 +11,13 @@ class WasabiController extends Controller
 {
     public function index(Request $request)
     {
-      return view('wasabi')
+      $user = Auth::user();
+      $param = ['user' => $user];
+
+      if(Auth::check()){
+        return redirect('home');
+      }else{
+        return view('wasabi', $param);
+      }
     }
 }

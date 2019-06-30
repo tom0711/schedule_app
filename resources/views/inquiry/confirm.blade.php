@@ -14,12 +14,12 @@
         <th>お問い合わせ内容：</th>
         <td>{{$items['inquiry']}}</td>
       </tr>
-      </table>
-      <table class="inquiry-table inquiry-submit-area">
+    </table>
+    <table class="inquiry-table inquiry-submit-area">
       <tr>
         <td class="inquiry-submit">
           <!-- 修正フォーム -->
-          <form class="" action="/inquiry/index" method="post">
+          <form class="" action="/inquiry/add" method="post">
             {{ csrf_field() }}
             <input type="hidden" name="title" value="{{$items['title']}}">
             <input type="hidden" name="inquiry" value="{{$items['inquiry']}}">
