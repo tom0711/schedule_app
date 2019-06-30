@@ -98,7 +98,7 @@ input[type="text"], textarea {
 }
 
 /* button */
-.btn-square-raised {
+.btn-square-raised, .btn-square-raised:hover {
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
@@ -109,6 +109,7 @@ input[type="text"], textarea {
   border-radius: 3px;
   font-weight: bold;
   text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  cursor: pointer;
 }
 
 .btn-square-raised:active {
@@ -121,6 +122,16 @@ input[type="text"], textarea {
 
 .sign-botton {
   margin: 3vh 3vh;
+}
+
+.back-home {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.back-home a {
+  width: 15rem;
 }
 
 /* content */

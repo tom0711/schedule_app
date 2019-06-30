@@ -23,7 +23,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// お問い合わせページ
 Route::get('/inquiry/index', 'InquiryController@index');
 Route::post('/inquiry/index', 'InquiryController@index');
 
 Route::post('/inquiry/confirm', 'InquiryController@confirm');
+
+Route::post('/inquiry/done', 'InquiryController@done');
