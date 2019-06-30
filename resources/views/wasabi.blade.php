@@ -23,7 +23,7 @@
     </div>
     <!-- <p>Planing schedule is finding yourself.</p> -->
     <p>Your calendar can change your life.</p>
-    <p>スケジュール管理をして普段の生活を充実させたい方へ</p>
+    <p>スケジュール管理をして仕事もプライベートも充実させましょう。</p>
 
     <div class="links">
       <a href="{{ route('register') }}" class="btn-square-raised sign-botton">新規登録</a>

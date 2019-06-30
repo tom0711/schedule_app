@@ -7,11 +7,10 @@ html, body {
     height: 100vh;
     margin: 0;
     font-size: 1rem;
-    overflow: hidden;
 }
 
 main {
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 form {
@@ -20,6 +19,21 @@ form {
 
 input[type="text"], textarea {
   border: 1px solid #636b6f;
+}
+
+#viewer {
+    margin: 0 auto;
+    width: 1850px;
+    height: 500px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#viewer img {
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 .full-height {
@@ -89,7 +103,7 @@ input[type="text"], textarea {
   left: 0px;
   width: 100%;
   min-height: 5vh;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 #header-logo {
@@ -135,8 +149,12 @@ input[type="text"], textarea {
 }
 
 /* content */
-.content {
-  margin-top: 10vh;
+.m-top-5 {
+  margin-top: 5vh;
+}
+
+.m-bottom-5 {
+  margin-bottom: 5vh;
 }
 
 /* home card */
@@ -262,4 +280,9 @@ input[type="text"], textarea {
 
 .inquiry-submit-area {
   width: 90%;
+}
+
+.footer {
+  height: 5rem;
+  background-color: #FFFFFF;
 }

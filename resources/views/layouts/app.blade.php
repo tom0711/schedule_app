@@ -11,6 +11,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('js/script.js') }}" defer></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -74,12 +76,12 @@
           </div>
       </div>
     </nav>
-
-    <main class="py-4">
-      <div class="content">
+    <main>
         @yield('content')
-      </div>
     </main>
+    <div class="footer">
+
+    </div>
   </div>
 </body>
 </html>
