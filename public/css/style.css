@@ -14,6 +14,10 @@ main {
   min-height: 100vh;
 }
 
+form {
+  margin-top: 1rem;
+}
+
 input[type="text"], textarea {
   border: 1px solid #636b6f;
 }
@@ -38,7 +42,7 @@ input[type="text"], textarea {
     top: 18px;
 }
 
-.index-content {
+.index-content, .center {
     text-align: center;
 }
 
@@ -112,7 +116,7 @@ input[type="text"], textarea {
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-  border-bottom: none;
+  border-bottom: solid 3px #78c993;
 }
 
 .sign-botton {
@@ -182,15 +186,19 @@ input[type="text"], textarea {
 
 /* main menu */
 .card-main {
-  float: left;
+  float: right;
   width: 70%;
   padding: 1rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
+  margin: 1rem 2rem;
 }
 
 /* inquiry */
+.inquiry-table {
+  width: 100%;
+}
+
 .inquiry-table th, .inquiry-table td {
+  width: 100%;
   padding: 5px 10px;
 }
 
@@ -198,14 +206,49 @@ input[type="text"], textarea {
   width: 20rem;
 }
 
-.inquiry-submit {
-  text-align: center;
-}
-
 .inquiry-table textarea {
+  width: 100%;
   resize: auto;
-  max-width: 45rem;
+  max-width: 100%;
   min-width: 20rem;
   max-height: 25rem;
   min-height: 200px;
+}
+
+.inquiry-submit {
+  width: 100%;
+  text-align: center;
+}
+
+.inquiry-submit input {
+  width: 15rem;
+}
+
+.inquiry-conf-area {
+  margin-right: 8%;
+}
+
+.inquiry-conf {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+.inquiry-conf tr {
+  border: 1px solid rgba(0, 0, 0, 0.29);
+}
+
+.inquiry-conf th {
+  text-align: center;
+  width: 25%;
+  border: 1px solid rgba(0, 0, 0, 0.29);
+
+}
+
+.inquiry-conf td {
+  width: 75%;
+}
+
+.inquiry-submit-area {
+  width: 90%;
 }

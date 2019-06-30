@@ -23,5 +23,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('inquiry/index', 'InquiryController@index');
-Route::post('inquiry/index', 'InquiryController@confirm');
+Route::get('/inquiry/index', 'InquiryController@index');
+Route::post('/inquiry/index', 'InquiryController@index');
+
+Route::post('/inquiry/confirm', 'InquiryController@confirm');

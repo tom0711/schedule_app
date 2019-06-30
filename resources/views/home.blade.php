@@ -13,7 +13,7 @@
                       <li><a href="#">Todoリスト</a></li>
                       <li><a href="#">独り言</a></li>
                       <li><a href="#">掲示板</a></li>
-                      <li><a href="/inquiry/index">問い合わせ</a></li>
+                      <li><a href="/inquiry/index">お問い合わせ</a></li>
                       <li><a href="#">設定</a></li>
                     </ul>
                   </div>
