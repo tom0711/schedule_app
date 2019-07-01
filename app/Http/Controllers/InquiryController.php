@@ -4,6 +4,7 @@ namespace wasabi\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use wasabi\Inquiry;
 
 class InquiryController extends Controller
@@ -43,13 +44,14 @@ class InquiryController extends Controller
   // お問い合わせ完了ページ
   public function done(Request $request)
   {
+    $user_id = Auth::user()->id;
     $items = [
       'title' => $request->title,
-      'inquiry' => $request->inquiry,
+      'user_id' => $user_id,
+      'question' => $request->inquiry,
     ];
-    protected $fillable = $items;
-    Inquiry::create($fillable);
+    Inquiry::create($items);
 
-    return view('inquiry.done');
+    return view('inquiry.done', ['items' => $items]);
   }
 }

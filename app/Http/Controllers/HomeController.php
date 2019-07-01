@@ -26,7 +26,10 @@ class HomeController extends Controller
     public function index(Request $request)
     {
       $id = $request->id;
+      $users = DB::table('users');
+      $data = $users->pluck('name');
       $item = DB::table('users')->where('id', $id)->first();
+
       return view('home', ['item' => $item]);
     }
 }
