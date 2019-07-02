@@ -7,8 +7,8 @@
       <div class="card">
         <div class="card-header">{{ __('新規登録') }}</div>
 
-        <div class="card-body">
-          <form method="POST" action="{{ route('register') }}">
+        <div class="card-body m-top-1">
+          <form method="POST" action="{{ route('register') }}" class="m-top-1 m-bottom-1">
             @csrf
 
             <div class="form-group row">

@@ -7,12 +7,12 @@
     <table class="inquiry-table inquiry-conf">
       <!-- 確認画面へ表示 -->
       <tr>
-        <th>タイトル：</th>
+        <th>タイトル</th>
         <td>{{$items['title']}}</td>
       </tr>
       <tr>
-        <th>お問い合わせ内容：</th>
-        <td>{{$items['inquiry']}}</td>
+        <th>お問い合わせ内容</th>
+        <td>{!! nl2br($items['inquiry']) !!}</td>
       </tr>
     </table>
     <table class="inquiry-table inquiry-submit-area">

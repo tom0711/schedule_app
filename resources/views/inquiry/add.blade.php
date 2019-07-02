@@ -17,18 +17,14 @@
       <tr>
         <th>お問い合わせ内容</th>
       </tr>
-    </table>
-    <table>
       <tr>
         <td>
           <textarea name="inquiry" rows="8" cols="80">{{ isset($items['inquiry']) ? $items['inquiry'] : old('inquiry') }}</textarea>
         </td>
       </tr>
-      <tr>
-        <td class="inquiry-submit">
-          <input class="btn-square-raised" type="submit" name="confirm" value="確認">
-        </td>
-      </tr>
     </table>
+    <div class="inquiry-submit">
+      <input class="btn-square-raised" type="submit" name="confirm" value="確認">
+    </div>
   </form>
 @endsection

@@ -12,8 +12,9 @@ class InquiryController extends Controller
   // お問い合わせ一覧ページ
   public function index(Request $request){
     $items = Inquiry::all();
+    $id = Auth::user()->id;
 
-    return view('inquiry.index', ['items' => $items]);
+    return view('inquiry.index', ['items' => $items, 'id' => $id]);
   }
 
   // お問い合わせ入力ページ
@@ -38,6 +39,7 @@ class InquiryController extends Controller
       'title' => $request->title,
       'inquiry' => $request->inquiry,
     ];
+
     return view('inquiry.confirm', ['items' => $items]);
   }
 
