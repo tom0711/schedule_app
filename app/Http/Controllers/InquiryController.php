@@ -12,6 +12,15 @@ class InquiryController extends Controller
   // お問い合わせ一覧ページ
   public function index(Request $request){
     $items = Inquiry::all();
+    foreach($items as $item){
+      $date = date_create($item->created_at);
+      $date = date_format($date, 'Y-m-d');
+      $item->date = $date;
+      if(isset($item->answer)){
+        $item->answer_true = '○';
+      }
+    }
+
     $id = Auth::user()->id;
 
     return view('inquiry.index', ['items' => $items, 'id' => $id]);
