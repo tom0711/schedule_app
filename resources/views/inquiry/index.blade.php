@@ -17,7 +17,7 @@
         @if($item->user_id == $id)
           <tr>
             <td>{{$item->date}}</td>
-            <td><a href="#">{{$item->title}}</a></td>
+            <td><a href="/inquiry/index">{{$item->title}}</a></td>
             <td>{{$item->answer_true}}</td>
           </tr>
         @endif

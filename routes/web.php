@@ -23,7 +23,6 @@ Route::get('/home', 'HomeController@index')->name('');
 
 // お問い合わせページ
 Route::get('/inquiry/index', 'InquiryController@index');
-Route::post('inquiry/index', 'InquiryController@show');
 
 Route::get('/inquiry/add', 'InquiryController@add');
 Route::post('/inquiry/add', 'InquiryController@add');
