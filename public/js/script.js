@@ -11,3 +11,24 @@ $(function(){
         $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
     },switchDelay);
 });
+
+// ピックアップ
+$(function(){
+  $('table.pickup td').hover(function(){
+    var idx = $(this).index() + 1
+    var tds = $(this).closest('table.pickup').find('td:nth-child(' + idx + ')');
+    $(this).css('background-color', '#cef1da');
+    $(this).siblings().css('background', '#cef1da');
+  }, function(){
+    var idx = $(this).index() + 1
+    var tds = $(this).closest('table.pickup').find('td:nth-child(' + idx + ')');
+    $(this).css('background-color', '#FFFFFF');
+    $(this).siblings().css('background', '#FFFFFF');
+
+  });
+});
+
+// ダイアログ表示
+$(function(){
+  $
+})

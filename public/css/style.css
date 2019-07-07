@@ -79,22 +79,6 @@ html, body {
     text-transform: uppercase;
 }
 
-.m-b-md {
-    margin-bottom: 30px;
-}
-
-.m-top-1 {
-  margin-top: 1rem;
-}
-
-.m-bottom-1 {
-  margin-bottom: 1rem;
-}
-
-.p-bottom-8 {
-  padding-bottom: 5vh;
-}
-
 .back-green {
   background-color: #cef1da;
   width: 100%;
@@ -107,6 +91,42 @@ html, body {
 
 .container {
   width: 1200px;
+}
+
+.pickup {
+  cursor: pointer;
+}
+
+/* margin */
+
+.m-top-5vh {
+  margin-top: 5vh;
+}
+
+.m-top-3rem {
+  margin-top: 3rem
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.m-top-1rem {
+  margin-top: 1rem;
+}
+
+.m-bottom-5vh {
+  margin-bottom: 5vh;
+}
+
+.m-bottom-1rem {
+  margin-bottom: 1rem;
+}
+
+/* padding */
+
+.p-bottom-5vh {
+  padding-bottom: 5vh;
 }
 
 /* header */
@@ -155,7 +175,6 @@ html, body {
 .center-button {
   width: 100%;
   text-align: center;
-  margin-top: 3rem;
 }
 
 .center-button a {
@@ -164,13 +183,6 @@ html, body {
 
 /* content */
 
-.m-top-5 {
-  margin-top: 5vh;
-}
-
-.m-bottom-5 {
-  margin-bottom: 5vh;
-}
 
 /* home card */
 
@@ -233,7 +245,7 @@ html, body {
 .card-main {
   float: left;
   width: 800px;
-  height: 500px;
+  min-height: 500px;
   padding: 1rem;
   margin: 1vh 14px;
 }

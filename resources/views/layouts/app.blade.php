@@ -78,7 +78,7 @@
     </nav>
     <main>
       <div id="background-img"></div>
-      <div class="back-white p-bottom-8">
+      <div class="back-white p-bottom-5vh">
         @yield('content')
           <div id="footer" class="bg-white">
             <div class="container">Footer</div>

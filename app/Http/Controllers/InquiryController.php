@@ -20,7 +20,7 @@ class InquiryController extends Controller
         $item->answer_true = '○';
       }
     }
-
+    
     $id = Auth::user()->id;
 
     return view('inquiry.index', ['items' => $items, 'id' => $id]);
