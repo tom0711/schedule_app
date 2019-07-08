@@ -129,6 +129,16 @@ html, body {
   padding-bottom: 5vh;
 }
 
+/* accordion */
+
+.accordion2 {
+  text-align: center;
+}
+
+.accordion2 .inner {
+  display: none;
+}
+
 /* header */
 #header-area {
   z-index: 9999;

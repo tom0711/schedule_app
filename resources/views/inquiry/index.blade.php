@@ -7,40 +7,45 @@
 
   <div class="inquiry-list">
     <h4>お問い合わせ一覧</h4>
-    <table class="inquiry-table inquiry-list-table pickup">
+    <table class="inquiry-table inquiry-list-table pickup accordion2">
       <tr>
         <th>問い合わせ日時</th>
         <th>タイトル</th>
         <th>回答</th>
       </tr>
-      @foreach($items as $item)
-        @if($item->user_id == $id)
-          <tr>
-            <td>{{$item->date}}</td>
-            <td>{{$item->title}}</td>
-            <td>{{$item->answer_true}}</td>
-          </tr>
-        @endif
-      @endforeach
+        @foreach($items as $item)
+          @if($item->user_id == $id)
+            <tr class="ac1">
+              <td>{{$item->date}}</td>
+              <td>{{$item->title}}</td>
+              <td>{{$item->answer_true}}</td>
+            </tr>
+              <tr class="inner">
+                <td colspan="3">
+                  <li>問い合わせ内容</li>
+                  <li>{{$item->question}}</li>
+                  @if(!empty($item->answer))
+                    <li>回答</li>
+                    <li>{{$item->answer}}</li>
+                  @endif
+                </td>
+              </tr>
+          @endif
+        @endforeach
     </table>
   </div>
-
-  <div class="dialog">
-    <table>
-      @foreach($items as $item)
-        <tr>
-          <th>タイトル</th>
-          <td>{{$item->title}}</td>
-        </tr>
-        <tr>
-          <th>問い合わせ内容</th>
-          <td>{{$item->question}}</td>
-        </tr>
-        <tr>
-          <th>回答</th>
-          <td>{{$item->answer}}</td>
-        </tr>
-      @endforeach
-    </table>
-  </div>
+  <ul class="accordion2">
+    @foreach($items as $item)
+    @if($item->user_id == $id)
+    <li>
+        <p class="ac1">{{$item->date}}  {{$item->title}}</p>
+        <ul class="inner">
+            <li class="content1-1">問い合わせ内容</li>
+            <li class="content1-2">{{$item->question}}</li>
+            <li class="content1-3">コンテンツ３</li>
+        </ul>
+    </li>
+    @endif
+  @endforeach
+</ul>
 @endsection
