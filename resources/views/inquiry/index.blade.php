@@ -35,17 +35,5 @@
     </table>
   </div>
   <ul class="accordion2">
-    @foreach($items as $item)
-    @if($item->user_id == $id)
-    <li>
-        <p class="ac1">{{$item->date}}  {{$item->title}}</p>
-        <ul class="inner">
-            <li class="content1-1">問い合わせ内容</li>
-            <li class="content1-2">{{$item->question}}</li>
-            <li class="content1-3">コンテンツ３</li>
-        </ul>
-    </li>
-    @endif
-  @endforeach
 </ul>
 @endsection
