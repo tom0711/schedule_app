@@ -27,14 +27,3 @@ $(function(){
 
   });
 });
-
-// アコーディオンメニュー
-$(function(){
-    //.accordion2の中のp要素がクリックされたら
-	$('.accordion2 .ac1').click(function(){
-		//クリックされた.accordion2の中のp要素に隣接する.accordion2の中の.innerを開いたり閉じたりする。
-		$(this).next('.accordion2 .inner').slideToggle();
-		//クリックされた.accordion2の中のp要素以外の.accordion2の中のp要素に隣接する.accordion2の中の.innerを閉じる
-		$('.accordion2 ac1').not($(this)).next('.accordion2 .inner').slideUp();
-	});
-});

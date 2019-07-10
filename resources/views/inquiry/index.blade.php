@@ -15,25 +15,13 @@
       </tr>
         @foreach($items as $item)
           @if($item->user_id == $id)
-            <tr class="ac1">
+            <tr>
               <td>{{$item->date}}</td>
               <td>{{$item->title}}</td>
               <td>{{$item->answer_true}}</td>
             </tr>
-              <tr class="inner">
-                <td colspan="3">
-                  <li>問い合わせ内容</li>
-                  <li>{{$item->question}}</li>
-                  @if(!empty($item->answer))
-                    <li>回答</li>
-                    <li>{{$item->answer}}</li>
-                  @endif
-                </td>
-              </tr>
           @endif
         @endforeach
     </table>
   </div>
-  <ul class="accordion2">
-</ul>
 @endsection
