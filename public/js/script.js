@@ -24,6 +24,19 @@ $(function(){
     var tds = $(this).closest('table.pickup').find('td:nth-child(' + idx + ')');
     $(this).css('background-color', '#FFFFFF');
     $(this).siblings().css('background', '#FFFFFF');
+  });
+});
 
+// ダイアログを開く
+$(function(){
+  $('.open_dialog').click(function(){
+    $('#dialog').fadeIn(700);
+  });
+});
+
+// ダイアログを閉じる
+$(function(){
+  $('.close_dialog').click(function(){
+    $('#dialog').fadeOut(700);
   });
 });
