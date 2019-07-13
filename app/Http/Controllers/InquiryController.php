@@ -20,10 +20,19 @@ class InquiryController extends Controller
         $item->answer_true = '○';
       }
     }
-    
+
+    $request->all();
+    $request->header('content-type');
+
+    if($request->isjson()){
+      $json = $request->json;
+    }else{
+      $json = '';
+    }
+
     $id = Auth::user()->id;
 
-    return view('inquiry.index', ['items' => $items, 'id' => $id]);
+    return view('inquiry.index', ['items' => $items, 'id' => $id, 'json' => $json]);
   }
 
   // お問い合わせ入力ページ

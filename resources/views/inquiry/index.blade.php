@@ -12,14 +12,20 @@
         <th>問い合わせ日時</th>
         <th>タイトル</th>
         <th>回答</th>
+        <th>詳細</th>
       </tr>
         @foreach($items as $item)
           @if($item->user_id == $id)
-            <tr class="open_dialog">
+          <form class="" action="/inquiry/index?id={{$item->id}}" method="post">
+            <tr id="{{$item->id}}">
               <td>{{$item->date}}</td>
               <td>{{$item->title}}</td>
               <td>{{$item->answer_true}}</td>
+              <td>
+                <input type="submit" name="detail" value="詳細">
+              </td>
             </tr>
+          </form>
           @endif
         @endforeach
     </table>
@@ -30,30 +36,32 @@
       <table>
         @foreach($items as $item)
           @if($item->user_id == $id)
-            <tr>
-              <th>問い合わせ日時</th>
-            </tr>
-            <tr>
-              <td>{{$item->date}}</td>
-            </tr>
-            <tr>
-              <th>タイトル</th>
-            </tr>
-            <tr>
-              <td>{{$item->title}}</td>
-            </tr>
-            <tr>
-              <th>問い合わせ内容</th>
-            </tr>
-            <tr>
-              <td>{{$item->question}}</td>
-            </tr>
-            <tr>
-              <th>回答</th>
-            </tr>
-            <tr>
-              <td>{{$item->answer}}</td>
-            </tr>
+            <div>
+              <tr>
+                <th>問い合わせ日時</th>
+              </tr>
+              <tr>
+                <td>{{$item->date}}</td>
+              </tr>
+              <tr>
+                <th>タイトル</th>
+              </tr>
+              <tr>
+                <td>{{$item->title}}</td>
+              </tr>
+              <tr>
+                <th>問い合わせ内容</th>
+              </tr>
+              <tr>
+                <td>{{$item->question}}</td>
+              </tr>
+              <tr>
+                <th>回答</th>
+              </tr>
+              <tr>
+                <td>{{$item->answer}}</td>
+              </tr>
+            </div>
           @endif
         @endforeach
       </table>

@@ -27,6 +27,21 @@ $(function(){
   });
 });
 
+$(function(){
+  $('.open_dialog').on('click', function(){
+    var id = $(this).attr('id');
+    $.ajax({
+        url:         "{{ url('/inquiry/index')}}"",
+        type:        'POST',
+        contentType: 'application/json',
+        datatype:    'json',
+        data:        JSON.stringify({
+          id: id
+        });
+    });
+  });
+});
+
 // ダイアログを開く
 $(function(){
   $('.open_dialog').click(function(){
