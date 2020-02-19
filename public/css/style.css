@@ -184,6 +184,10 @@ html, body {
   color: #78c993;
 }
 
+#header-logo img {
+  width: 10rem;
+}
+
 /* button */
 .btn-square-raised, .btn-square-raised:hover {
   display: inline-block;
