@@ -21,6 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('');
 
+Route::get('/text/index', 'TeachTextController@index');
+
 // お問い合わせページ
 Route::get('/inquiry/index', 'InquiryController@index');
 

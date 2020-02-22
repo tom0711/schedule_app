@@ -32,7 +32,7 @@
         
 
           <a id="header-logo" class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{ asset('image/wasabi_logo2.png') }}">
+            <img src="{{ asset('image/wasabi_logo4.png') }}">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
@@ -84,7 +84,9 @@
       <div class="back-white p-bottom-5vh">
         @yield('content')
           <div id="footer" class="bg-white">
-            <div class="container">Footer</div>
+            <div class="container">
+              <small>&#064;wasabi</small>
+            </div>
           </div>
       </div>
     </main>
